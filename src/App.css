@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.font-creepster {
+  font-family: 'Creepster', cursive;
+}
+
+.root {
+  background-image: url("./assets/halloween-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.halloween-pet-bg::before {
+    content: '🎃🐱👻🐶';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: float 10s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
